@@ -2,71 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login Page</title>
+  <title>Sign in</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f1f3f6;
+      background: #f8f9fa;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
 
-    .box {
+    .card {
       background: white;
-      padding: 30px;
-      width: 320px;
+      padding: 40px;
+      width: 360px;
+      border: 1px solid #dadce0;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
       text-align: center;
     }
 
-    h2 {
+    .title {
+      font-size: 22px;
       margin-bottom: 20px;
+      color: #202124;
     }
 
     input {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    input:focus {
+      border: 1px solid #1a73e8;
     }
 
     button {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
+      margin-top: 15px;
       background: #1a73e8;
       color: white;
       border: none;
-      border-radius: 6px;
+      border-radius: 4px;
       cursor: pointer;
-      margin-top: 10px;
     }
 
     button:hover {
       background: #1558b0;
     }
 
-    .small {
+    .footer {
+      margin-top: 15px;
       font-size: 12px;
-      color: gray;
-      margin-top: 10px;
+      color: #5f6368;
     }
   </style>
 </head>
 <body>
 
-  <div class="box">
-    <h2>Sign In</h2>
+  <div class="card">
+    <div class="title">Sign in</div>
 
-    <input type="text" placeholder="Email or Username">
+    <input type="text" placeholder="Email or phone">
     <input type="password" placeholder="Password">
 
-    <button>Login</button>
+    <button>Next</button>
 
-    <div class="small">Secure login demo page</div>
+    <div class="footer">
+      Secure login demo page
+    </div>
   </div>
 
 </body>
